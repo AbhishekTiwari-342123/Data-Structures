@@ -215,7 +215,7 @@ public class example_5_1 {
 					   ob1.delete_at_pos(q);
 		   	   	  	   break;   
 				case 8 :ob1.display();
-					   break;		   
+					   break;		    
 			}
 			System.out.println("\nEnter the choice");
 			System.out.println("1. Create Node");
