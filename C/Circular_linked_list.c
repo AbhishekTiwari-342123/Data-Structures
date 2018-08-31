@@ -11,6 +11,7 @@ typedef struct node{
 node *head=NULL;
 
 //All the methods for the Circular Linked List
+
 void create_node()
 {
 	node *p=(node *)malloc(sizeof(node));
@@ -206,6 +207,7 @@ void display()
 }
 
 //The Main Function
+
 void main()
 {
 
@@ -226,31 +228,31 @@ void main()
 		switch(ch)
 		{
 			case 1:	printf("Enter the number of nodes you wish to create.\n");
-					int i,n;
-					scanf("%d",&n);
-					for(i=1;i<=n;i++)
-						create_node();
-				    break;
+				int i,n;
+				scanf("%d",&n);
+				for(i=1;i<=n;i++)
+					create_node();
+				break;
 			case 2:insert_beg();
-					break;
+				break;
 			case 3:insert_end();
-				   	   break;
+				break;
 			case 4:printf("\nEnter the position.");
-				   int p;
-				   scanf("%d",&p);
-				   insert_at_pos(p);
-				   break;
+			       int p;
+			       scanf("%d",&p);
+			       insert_at_pos(p);
+			       break;
 			case 5:delete_beg();
-			   	   break;
+			       break;
 			case 6:delete_end();
-				   break;
+			       break;
 			case 7:printf("\nEnter the position you want to delete");
-				   int q;
-				   scanf("%d",&q);
-				   delete_at_pos(q);
-		   	   	   break;   
+			       int q;
+			       scanf("%d",&q);
+			       delete_at_pos(q);
+		   	       break;    
 			case 8:display();
-				   break;		   
+			       break;		   
 		}
 	printf("\nEnter the choice\n");
 	printf("1. Create Node\n");
@@ -261,8 +263,7 @@ void main()
 	printf("6. Delete at End\n");
 	printf("7. Delete at any Position\n");
 	printf("8. Display List\n");
-
-		scanf("%d",&ch);
+	scanf("%d",&ch);
 	}	
 	getch();	
 }
